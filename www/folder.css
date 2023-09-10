@@ -1,0 +1,12 @@
+.panel-auth{
+  background-size: cover;
+  overflow-y: auto;
+}
+
+.panel{
+  border-radius: 15px;
+}
+
+#auth-shinymanager-auth-head{
+  display: none;
+}

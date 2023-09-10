@@ -1,0 +1,47 @@
+.well{
+  background-color: #656f79;
+  padding: 10px;
+  overflow-x: auto;
+  
+}
+
+
+.dataTables_length label select{
+  color: #333 !important;
+}
+
+.tui-full-calendar-layout{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.calendar{
+  height: fit-content !important; 
+}
+
+.tui-full-calendar-schedule-title,
+.tui-full-calendar-popup-detail-date,
+.tui-full-calendar-content,
+.tui-full-calendar-popup-detail-item,
+.tui-full-calendar-popup-detail-item .tui-full-calendar-popup-detail-item-separate{
+  color:#333;
+}
+
+
+div[id*='instCal_menu']{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.render-range{
+  color:#333;
+  font-weight: 900;
+}
