@@ -77,7 +77,7 @@ k <- lapply(tabs, function(i) {
 
 body <- bs4DashBody(
   useCss(file = 'style.css'),
-  useShinyalert(),
+  useShinyalert(force = TRUE),
   useKeys(),
   keysInput("keys", hotkeys),
   do.call(what = bs4TabItems, args = k)

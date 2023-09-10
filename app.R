@@ -47,21 +47,21 @@ if(!file.exists("data/creds.sqlite")){
 
 ui <- bs4DashPage(header = nav,sidebar = side,body = body,controlbar = cb,title = AppTitle,fullscreen = T,dark = T)
 
-# ui <- secure_app(
-#   ui = ui,
-#   tags_top = 
-#     tags$div(
-#       tags$head(
-#         tags$link(rel = "stylesheet", href ="folder.css"),
-#         tags$title(AppTitle)
-#       ),
-#       tags$img(
-#         src = "logo_bw.png", width = 200
-#       )
-#     ),
-#   background  = "url('bg.jpg')  no-repeat center fixed;",
-#   theme = shinythemes::shinytheme(theme ="paper"),
-#   enable_admin = TRUE)
+ui <- secure_app(
+  ui = ui,
+  tags_top = 
+    tags$div(
+      tags$head(
+        tags$link(rel = "stylesheet", href ="folder.css"),
+        tags$title(AppTitle)
+      ),
+      tags$img(
+        src = "logo-no-background.png", width = 200
+      )
+    ),
+  background  = "url('bg1.jpg')  no-repeat center fixed;",
+  theme = shinythemes::shinytheme(theme ="paper"),
+  enable_admin = TRUE)
 
 
 server <- function(input, output, session) {
